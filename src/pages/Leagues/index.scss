@@ -1,0 +1,50 @@
+.__color {
+  height: 32px;
+  width: 80px;
+  border-radius: 5px;
+  padding: 2px;
+}
+._filter_leagues {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin-top: 4px;
+  @apply p-2 absolute w-full bg-white shadow-xl;
+}
+._color_leagues {
+  height: 58px;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 2px;
+  padding: 2px;
+  text-transform: uppercase;
+  @apply relative cursor-pointer flex justify-center items-center;
+}
+
+.filter-list {
+  .ant-picker {
+    width: 100%;
+  }
+  .ant-select {
+    width: 100%;
+  }
+  .filter-label {
+    margin-bottom: 5px;
+  }
+}
+
+.status-cls {
+  display: flex;
+  align-items: center;
+
+  .status-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}

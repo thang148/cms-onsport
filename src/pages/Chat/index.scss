@@ -1,0 +1,45 @@
+.modal-form {
+  .modal-input-number {
+    width: 100% !important;
+  }
+  .ant-picker {
+    width: 100% !important;
+  }
+}
+
+.permission-detail {
+  .item-button {
+    text-align: left !important;
+  }
+  .box-button-transfer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    .button-transfer {
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 50%;
+    }
+  }
+  .ant-list-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+  }
+}
+
+.upload-avatar-user {
+  text-align: center;
+  .ant-upload-select {
+    border-radius: 50%;
+    margin: 0 auto;
+    img {
+      border-radius: 50%;
+    }
+  }
+}

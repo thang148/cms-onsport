@@ -1,0 +1,42 @@
+.sub__menu:hover .collapse {
+  display: block;
+}
+
+.__active__sub__menu .__icon_sub {
+  background-color: #fff;
+}
+
+.show__sider {
+  flex: 0 0 260px;
+  max-width: 260px;
+  min-width: 260px;
+  width: 260px;
+}
+
+.hide__sider {
+  flex: 0 0 88px;
+  max-width: 88px;
+  min-width: 88px;
+  width: 88px;
+}
+
+.menu__item {
+  @apply rounded hover:bg-white/30 h-11 px-4 flex items-center gap-4 ease-in-out duration-200;
+}
+
+.__scroll {
+  height: calc(100vh - 56px);
+}
+.__scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.__scroll::-webkit-scrollbar-track {
+  background-color: #3f4555;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.__scroll::-webkit-scrollbar-thumb {
+  background-color: #596177;
+  border-radius: 8px;
+}

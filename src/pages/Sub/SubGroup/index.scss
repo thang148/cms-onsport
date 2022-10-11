@@ -1,0 +1,24 @@
+.filter-list {
+  .ant-picker {
+    width: 100%;
+  }
+  .ant-select {
+    width: 100%;
+  }
+  .filter-label {
+    margin-bottom: 5px;
+  }
+}
+
+.status-cls {
+  display: flex;
+  align-items: center;
+
+  .status-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}

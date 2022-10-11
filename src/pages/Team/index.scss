@@ -1,0 +1,41 @@
+.__nas {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  font-size: 14px;
+  @apply bg-white;
+
+  .view_folder {
+    max-width: 140px;
+    border: 1px solid #fff;
+    @apply text-center cursor-pointer mx-2 mb-4;
+    &:hover {
+      border: 1px solid rgb(26, 13, 145);
+      background-color: rgb(242, 244, 255);
+    }
+    img {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+  .__item {
+    border: 1px solid #fff;
+    width: 90px;
+    font-size: 12px;
+  }
+  .__active {
+    border: 1px solid rgb(26, 13, 145);
+    background-color: rgb(242, 244, 255);
+  }
+}
+.__img_upload {
+  border: 1px solid #ccc;
+  width: 104px;
+  height: 104px;
+  border-radius: 4px;
+  @apply flex justify-center items-center cursor-pointer;
+}
+.tag_name {
+  left: 1rem;
+  top: -10px;
+}

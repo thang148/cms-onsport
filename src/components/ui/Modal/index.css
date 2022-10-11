@@ -1,0 +1,7 @@
+.__root {
+  z-index: 8;
+}
+
+.__root__content {
+  z-index: 9;
+}

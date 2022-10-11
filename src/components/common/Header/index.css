@@ -1,0 +1,6 @@
+.sub__menu:hover .collapse {
+  display: block;
+}
+.__active__sub__menu .__icon_sub {
+  background-color: #fff;
+}

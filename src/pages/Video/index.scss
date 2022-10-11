@@ -1,0 +1,30 @@
+.__loading {
+  z-index: 3;
+  // opacity: 0.8;
+  @apply absolute inset-0 w-full h-full bg-white bg-opacity-80;
+}
+.error__text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @apply absolute w-16;
+}
+.__protected {
+  top: 4px;
+  right: 4px;
+  border-radius: 2px;
+  padding: 0 5px;
+  background-color: rgb(32, 32, 32);
+  @apply absolute text-white;
+}
+.__protected_content {
+  bottom: 4px;
+  left: 4px;
+  border-radius: 2px;
+  padding: 0 5px;
+  @apply absolute text-red-600 text-lg bg-white bg-opacity-80;
+}
+.__false {
+  z-index: 3;
+  @apply absolute inset-0 w-full h-full bg-black bg-opacity-60;
+}

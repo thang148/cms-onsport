@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wapper_small {
+    @apply max-w-screen-xl m-auto;
+  }
+
+  .__content {
+    @apply p-4 bg-white rounded shadow;
+  }
+
+  .footer_modal {
+    padding-top: 10px;
+    @apply flex justify-end gap-4 border-t;
+  }
+
+  .shadow_antd {
+    @apply bg-white cursor-pointer rounded p-2 space-y-2;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
+      0 9px 28px 8px #0000000d;
+  }
+
+  .show__sider {
+    flex: 0 0 260px;
+    max-width: 260px;
+    min-width: 260px;
+    width: 260px;
+  }
+
+  .hide__sider {
+    flex: 0 0 88px;
+    max-width: 88px;
+    min-width: 88px;
+    width: 88px;
+  }
+}
+
+.article-action .ant-dropdown-trigger span {
+  font-size: 20px;
+  color: rgb(24, 144, 255);
+}
+
+@layer utilities {
+  .w-200 {
+    width: 200px;
+  }
+
+  .w-150 {
+    width: 150px;
+  }
+}

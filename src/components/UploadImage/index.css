@@ -1,0 +1,12 @@
+.__img_main .ant-upload {
+  @apply flex items-center w-full;
+}
+
+.__img_main .ant-upload-select-picture-card {
+  min-height: 200px;
+  height: inherit;
+}
+
+.xxx {
+  height: 200px;
+}

@@ -1,0 +1,85 @@
+{
+  "name": "cms",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@craco/craco": "^6.1.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.22.2",
+    "antd-img-crop": "^4.2.3",
+    "array-move": "^4.0.0",
+    "autoprefixer": "^10.4.8",
+    "axios": "^0.21.1",
+    "axios-auth-refresh": "^3.1.0",
+    "axios-retry": "^3.2.4",
+    "craco-less": "^2.0.0",
+    "env-cmd": "^10.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "mux.js": "^6.2.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.3.0",
+    "query-string": "^7.1.1",
+    "react": "^16.8.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^16.8.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-sortable-hoc": "^2.0.0",
+    "sass": "^1.32.13",
+    "shaka-player": "^4.2.1",
+    "slugify": "^1.5.3",
+    "tailwindcss": "^3.1.7",
+    "uniforms": "^3.5.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.15"
+  },
+  "scripts": {
+    "build-staging": "env-cmd -f .env.staging craco build && node addVersion.js",
+    "build-production": "env-cmd -f .env.production craco build && node addVersion.js",
+    "start": "craco start",
+    "build": "craco build && node addVersion.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"./src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"./src/**/*.{js,jsx}\" --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
